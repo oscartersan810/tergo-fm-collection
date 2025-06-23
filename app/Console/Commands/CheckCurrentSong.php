@@ -48,7 +48,7 @@ class CheckCurrentSong extends Command
 
             $schedule = null;
             foreach ($schedules as $sch) {
-                $this->info('Franja: ' . $sch->start_time . ' - ' . $sch->end_time . ' | Día: ' . $sch->day_of_week);
+                $this->info('Franja: ' . $sch->start_time . ' - ' . $sch->end_time . ' | Día: ' . $sch->day_of_week . ' | Playlist: ' . ($sch->playlist->name ?? '-') . ' | Emisora: ' . ($sch->station->name ?? '-'));
                 $start = $sch->start_time;
                 $end = $sch->end_time;
                 if ($start === $end) {

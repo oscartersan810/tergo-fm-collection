@@ -132,7 +132,9 @@
                                         <i class="bi bi-broadcast text-primary fs-2 me-3"></i>
                                         <div>
                                             <div class="live-title fs-4 mb-1">{{ $status->station->name }}</div>
-                                            <div class="live-meta">Playlist: <span class="fw-semibold">{{ $status->playlist->name ?? '-' }}</span></div>
+                                            <div class="live-meta">
+                                                Playlist en directo: <span class="fw-semibold">{{ $status->playlist->name ?? '-' }}</span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="mb-2">
